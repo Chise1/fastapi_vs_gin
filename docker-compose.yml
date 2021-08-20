@@ -1,0 +1,13 @@
+version: '3'
+services:
+  wrkt:
+    build: .
+    environment:
+      MODULE_NAME: main.py
+      VARIABLE_NAME: "app"
+      APP_MODULE: main:app
+      PORT: 8000
+    ports:
+      - '8000:8000'
+    image: wrkt
+    command: "/start.sh"

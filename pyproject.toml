@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "wrkt"
+version = "0.1.0"
+description = ""
+authors = ["yuxiaofei <531189371@qq.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.68.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# 谨慎使用，会导致包更新不及时
+[[tool.poetry.source]]
+url = "https://mirrors.aliyun.com/pypi/simple/"
+name = "aliyun"
+default = true
